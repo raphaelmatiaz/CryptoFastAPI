@@ -1,0 +1,4 @@
+- Objetivo da aplicação
+- Justificação técnica da escolha da framework
+- Processo de instalação
+- Como utilizar a aplicação
