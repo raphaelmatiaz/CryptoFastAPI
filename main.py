@@ -33,10 +33,12 @@ def getBitcoin(datafile='bitcoin.json'):
         print("JSON DUMPED")
         print("BITCOIN")
 
+        return data
+    
     else:
         print(f"Error status code {result.status_code}")
 
-    return result
+    
 
 
 
@@ -61,10 +63,12 @@ def allExchanges(datafile='exchanges.json'):
         print("JSON DUMPED")
         print("ALL EXCHANGES")
 
+        return data
+
     else:
         print(f"Error status code {result.status_code}")
 
-    return result
+    
 
 
 # Gets and dumps crypto data from ETH to 101's position
@@ -88,10 +92,11 @@ def crypto100(datafile='top100.json'):
         print("JSON DUMPED")
         print("TOP 100 CRYPTO")
 
+        return data
+    
     else:
         print(f"Error status code {result.status_code}")
 
-        return result
 
 
 
