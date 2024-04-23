@@ -10,4 +10,5 @@ EXPOSE 8000
 
 RUN poetry install
 
-CMD python main.py
+CMD poetry run python main.py
+
