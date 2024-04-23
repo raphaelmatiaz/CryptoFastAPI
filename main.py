@@ -2,6 +2,7 @@ import requests
 import json
 from fastapi import FastAPI
 import uvicorn
+import models
 
 
 app = FastAPI()
@@ -98,6 +99,20 @@ def crypto100(datafile='top100.json'):
         print(f"Error status code {result.status_code}")
 
 
+@app.get("/top100/filtered")
+def filterCoinData():
+
+    filteredCoins = []
+
+    coins = crypto100()['data']
+    
+    for coin in coins:
+
+        filteredCoin = models.coinInfo(**coin)
+        print(filteredCoin)
+        filteredCoins.append(filteredCoin)
+
+    return filteredCoins
 
 
 if __name__ == '__main__':
