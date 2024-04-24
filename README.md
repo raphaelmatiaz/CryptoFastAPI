@@ -26,35 +26,69 @@ In order to install the app, execute the following steps in order:
 1. ***Cloning the Repository*** : 
 
 Open up the terminal of your choice and **cd** into the location where you'd like to clone the repository, for example: _/desktop_. Then type the following command:
-
+```
      git clone https://github.com/raphaelmatiaz/CryptoFastAPI.git
-
+```
 Alteratively, you may also dowload and unzip the repo by clicking the green <**CODE**> button on the top right corner of the repo, and then clicking **Download Zip**.
 
 2. ***Entering the Cloned Repository*** : 
 
 From you current path location, **cd** into the cloned repository:
-
+```
      cd CryptoFastAPI
-
+```
 3. ***Installing and Running the APP*** : 
 
 Now that you are in the cloned repository path, start by installing the app via the following command:
-
+```
     make install
-
+```
 ---------------------
 /!\ **NOTE** /!\  
-_Make sure **Docker** and **docker-compose** are propperly installed on your system in order for this step to work._
+_Make sure **Docker** and **docker-compose** are propperly installed on your system in order for this step to work! 
 
 #
 ## Using the API Application
 
 The API will be running immedialy after intallation. You can open up a new browser window and acces the following url to start interacting with it:
-
+```
     http://localhost:8000/
+```
+In order to use the app, simply add any of the following url endpoints to your current root url __localhost:8000/__. Each endpoint will submit an HTTP 'GET' request, and return the latest crypto informations uniquely relative to it in JSON format:
 
-In order to use the app, simply add any of the following url endpoints to your current root url __localhost:8000/__. Each endpoint will return the latest crypto informations uniquely relative to it in JSON format:
+**EXAMPLE** 
+
+```
+# Request to endpoint '/bitcoin'
+
+http://localhost:8000/bitcoin
+```
+
+```
+# Reponse sample from that request
+
+[
+  {
+    "id": "90",
+    "symbol": "BTC",
+    "name": "Bitcoin",
+    "nameid": "bitcoin",
+    "rank": 1,
+    "price_usd": "64711.26",
+    "percent_change_24h": "-2.65",
+    "percent_change_1h": "-0.56",
+    "percent_change_7d": "1.37",
+    "price_btc": "1.00",
+    "market_cap_usd": "1272756915151.50",
+    "volume24": 26503101700.7098,
+    "volume24a": 27001498893.2909,
+    "csupply": "19668246.00",
+    "tsupply": "19668246",
+    "msupply": "21000000"
+  }
+]
+```
+
 
 **ENDPOINTS**
 
