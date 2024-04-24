@@ -150,7 +150,21 @@ make stop
 ```
 Alternatively, you may also access the terminal instance running the app, and use "**CTRL + C**" to terminate the current running process.
 
+**LOGGING MESSAGES**
 
+The APP includes custom logging messages to keep you informed during use. These messages are easily distinguishable as they start with '**INFO:main**' and are encased in little boxes for readability purposes.
+
+They detail each relevant step of a request, providing information encased in helpful messages, such as **status codes** or even **date and time** of each event [Time zone is set to 'Portugal : Lisbon'].
+
+**EXAMPLE** 
+
+```
+crypto-1  | INFO:main:==========================================================================
+crypto-1  | INFO:main:--------------------------- 24/04/2024 17:26:58---------------------------
+crypto-1  | INFO:main: Successfully returned latest Bitcoin data in JSON format! 
+crypto-1  | INFO:main: Check 'localhost/8000/bitcoin' to view the response! 
+crypto-1  | INFO:main:==========================================================================
+```
 
 
 ------------------
