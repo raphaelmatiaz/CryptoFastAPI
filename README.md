@@ -73,7 +73,7 @@ most relevant fields from each endpoint
 
     * Symbol
     * Name
-    * Eank
+    * Rank
     * Price USD
     * Price BTC
     * Market Cap USD
@@ -83,7 +83,7 @@ most relevant fields from each endpoint
 
     * Symbol
     * Name
-    * Eank
+    * Rank
     * Price USD
     * Price BTC
     * Market Cap USD
@@ -94,7 +94,6 @@ most relevant fields from each endpoint
     * Name
     * Volume USD
     * Active_pairs
-    * Price BTC
     * Website URL
     * Country
 
