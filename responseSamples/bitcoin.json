@@ -1,0 +1,20 @@
+[
+    {
+        "id": "90",
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "nameid": "bitcoin",
+        "rank": 1,
+        "price_usd": "66744.89",
+        "percent_change_24h": "1.05",
+        "percent_change_1h": "0.38",
+        "percent_change_7d": "7.06",
+        "price_btc": "1.00",
+        "market_cap_usd": "1312754924281.60",
+        "volume24": 27169388286.148212,
+        "volume24a": 26830908430.53678,
+        "csupply": "19668246.00",
+        "tsupply": "19668246",
+        "msupply": "21000000"
+    }
+]

@@ -1,18 +1,18 @@
 # LATEST CRYPTO-DATA API
 
-The **LATEST CRYPTO-DATA API** is an API project built leveraging the renowned **FastAPI** web framework, and was created as my final project for the *'Backend I'*  module from the *'Programacão Web - 23/25'* course from **ETIC Algarve** school.
+The **LATEST CRYPTO-DATA API** is an API project built leveraging the renowned **FastAPI** web framework, and was created as my final project for the *'Backend I'*  module from the *'Programacão Web - 23/25'* course at **Escola de Tecnologias, Inovação e Criação do Algarve - ETIC Algarve**.
 
 #
 ## Goal of this APP
 
 My ambition with this project, was to create an API with multiple endpoints, each retrieving a target pocket of data, relative to a specific aspect of the Cryptocurrency ecosystem. 
 
-Ultimetly, this API could serve as a backend app for providing the latest data to a crypto-aimed dashboard, web-app or website of some sort, in which the latest data on prices, rankings and exchange platforms would be relevant to it' goal.
+Ultimetly, this API may serve as a backend app for providing the latest data to a crypto-aimed dashboard, web-app or website, in which the latest data on prices, rankings, volumes, marketCAP and exchange platforms would be relevant that web serveice's goal.
 
 #
 ## Why use FastAPI?
 
-**FastAPI** was an obvious choice for this project, first, because it was the API Framework to which I was istroduced in the *'Backend I'*  module from the *'Programacão Web'* course at **ETIC Algarve**, and was mandatory in the context of this project option. 
+**FastAPI** was an obvious choice for this project, first, because it was the API Framework to which I was istroduced in the *'Backend I'*  module from the *'Programacão Web - 23/25'* course at **ETIC Algarve**, and was mandatory in the context of this project option. 
 
 In a broader sence, **FastAPI** is a great choice for building APIs due to it's efficiency and speed, ease of use, and built-in modern features such as the **FastAPI class** and decorator functions (allowing for a smooth and intuitive creation of endpoints) as well as automatic documentation and type hinting. This makes development faster and ensures well-structured, reliable APIs. 
 
@@ -23,23 +23,25 @@ In order to install the app, execute the following steps in order:
 
 
 
-1. ***Cloning the Repository***: 
+1. ***Cloning the Repository*** : 
 
 Open up the terminal of your choice and **cd** into the location where you'd like to clone the repository, for example: _/desktop_. Then type the following command:
 
      git clone https://github.com/raphaelmatiaz/CryptoFastAPI.git
 
-2. ***Entering the Cloned Repository***: 
+Alteratively, you may also dowload and unzip the repo by clicking the green <**CODE**> button on the top right corner of the repo, and then clicking **Download Zip**.
+
+2. ***Entering the Cloned Repository*** : 
 
 From you current path location, **cd** into the cloned repository:
 
      cd CryptoFastAPI
 
-3. ***Running the APP***: 
+3. ***Installing and Running the APP*** : 
 
-Now that you are in the cloned repository, you are able to run the app with the following command:
+Now that you are in the cloned repository path, start by installing the app via the following command:
 
-    make cryptodata
+    make install
 
 ---------------------
 /!\ **NOTE** /!\  
@@ -48,11 +50,11 @@ _Make sure **Docker** and **docker-compose** are propperly installed on your sys
 #
 ## Using the API Application
 
-After going throught the **Installation** steps, open up a new browser window and acces the following url:
+The API will be running immedialy after intallation. You can open up a new browser window and acces the following url to start interacting with it:
 
     http://localhost:8000/
 
-In order to use the app, simply add any of the following url endpoints to your current root url. Each endpoint will return the latest crypto informations uniquely relative to it in JSON format:
+In order to use the app, simply add any of the following url endpoints to your current root url __localhost:8000/__. Each endpoint will return the latest crypto informations uniquely relative to it in JSON format:
 
 **ENDPOINTS**
 
@@ -96,6 +98,25 @@ most relevant fields from each endpoint
     * Active_pairs
     * Website URL
     * Country
+
+**START AND STOP THE APP**
+
+/!\ **NOTE** /!\  
+Make sure you followed the steps under **Installation** before you use the following commands. You may encounter issues otherwise.
+
+For any subsequent uses of the app:
+
+* Start the app
+```
+make start
+```
+* Stop the app
+```
+make stop
+```
+Alternatively, you may also access the terminal instance running the app, and use "**CTRL + C**" to terminate the current running process.
+
+
 
 
 ------------------
