@@ -1,6 +1,0 @@
-Github Repo Link:
- - https://github.com/raphaelmatiaz/CryptoFastAPI
-
- Git Tag:
-
- - xxxxxxxxxxxx
